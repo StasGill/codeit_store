@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeIt store</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css" />
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="burgerMenu ">
+        <a href="#" class="burgerMenuSVG"><img src="./svg/menu.svg" alt="" class="" width="20px"></a>
+      </div>
+  <header>
+    <div class="container">
+      
+      <!-- <div class="header"> -->
+      <div class="logo col-2">
+        <a href="#" class="main_logo__link">
+          <p class="logoP"> <span class="red">Code</span>IT</p>
+        </a>
+        <p class="logo-sm">STORE</p>
+      </div>
+      <nav class="nav">
+        <div class="col-7">
+          <ul class="menu ">
+            <li class="menu__item">
+              <a href="#" class="menu__link">HOME</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">ALL BRANDS <i class="fa fa-angle-down "></i></a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">LATEST</a>
+            </li>
+            <li class="menu__item super">
+              <a href="#" class="menu__link">FEATURED &#8595;</a>
+              <div class="hidenMenu">
+                <p class="menu__item">New item</p>
+                <p class="menu__item">New Goods</p>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">ABOUT</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">BLOG</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">CONTACT</a>
+            </li>
+            <li class="menu__item menu__itemSvg">
+              <a href="#" class="menu__link"><img src="./svg/search.svg" alt="" class="itemButtonSwg"></a>
+
+            </li>
+          </ul>
+          <span class="icon-headphones"></span>
+        </div>
+        <div class="col-2">
+          <a class="shopping-bag" href="#">
+            <img src="images/SHOPPINGBAG.png" class="shopping-bag__img" alt="img">
+            <span class="shopping-bag__sum">$ 460.00</span>
+            <span class="shopping-bag__qty">2</span>
+
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+  <section class="myWishlist">
+    <div class="container">
+      <div class="myWishlistContainer col-2">
+        <h2 class="myWishlistH2">MY WISHLIST</h2>
+      </div>
+      <div class="myWishlistContainerTwo col-2">
+        <p>HOME > MYWISH LIST</p>
+      </div>
+    </div>
+  </section>
+  <section class="filterGoods">
+    <div class="container">
+      <form class="filterGoodsForm">
+        <input type="text" class="filterGoodsInput" placeholder="Find goods....">
+        <button class="filterGoodsButton">CLEAR LIST</button>
+      </form>
+    </div>
+  </section>
+  <section class="goods">
+    <div class="container">
+      <ul class="goodsList">
+        <li class="goodsListItem">
+          <div class="col-3 item-card">
+            <div class="itemContainerImg">
+              <img src="images/1.png" alt="img" class="item-card__main__img">
+              <div class="hiddenButton" data-start="0" data-end="3">
+                <button class="hiddenButtonItem" data-id="0">Remove from list</button>
+              </div>
+            </div>
+            <div class="itemInfo">
+              <div class="item-card__title">Huawei Mate S</div>
+              <div class="itemInfoPrice">$280.00</div>
+            </div>
+            <div class="item-card__footer">
+              <button class="itemButton">
+                <img src="./svg/bin.svg"  data-id="0" alt="" class="itemButtonSwg" >
+              </button>
+              <button class="itemButton">
+                <img src="./svg/cart.svg" alt="" class="itemButtonSwg">
+
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="goodsListItem">
+          <div class="col-3 item-card">
+            <div class="itemContainerImg">
+              <img src="images/2.png" alt="img" class="item-card__main__img">
+              <div class="hiddenButton">
+                <button class="hiddenButtonItem" data-id="1">Remove from list</button>
+              </div>
+            </div>
+            <div class="itemInfo">
+              <div class="item-card__title">SONY XPERIA Z5</div>
+              <div class="itemInfoPrice">$550.00</div>
+            </div>
+            <div class="item-card__footer">
+              <button class="itemButton">
+                <img src="./svg/bin.svg" data-id="1" alt="" class="itemButtonSwg" >
+              </button>
+              <button class="itemButton">
+                <img src="./svg/cart.svg" alt="" class="itemButtonSwg">
+
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="goodsListItem">
+          <div class="col-3 item-card">
+            <div class="itemContainerImg">
+              <img src="images/3.png" alt="img" class="item-card__main__img">
+              <div class="hiddenButton">
+                <button class="hiddenButtonItem" data-id="2">Remove from list</button>
+              </div>
+            </div>
+            <div class="itemInfo">
+              <div class="item-card__title">Xiaomi Mi 4i</div>
+              <div class="itemInfoPrice">$350.00</div>
+            </div>
+            <div class="item-card__footer">
+              <button class="itemButton">
+                <img src="./svg/bin.svg" data-id="2" alt="" class="itemButtonSwg" >
+              </button>
+              <button class="itemButton">
+                <img src="./svg/cart.svg" alt="" class="itemButtonSwg">
+
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="goodsListItem">
+          <div class="col-3 item-card">
+            <div class="itemContainerImg">
+              <img src="images/4.png" alt="img" class="item-card__main__img">
+              <div class="hiddenButton">
+                <button class="hiddenButtonItem" data-id="3">Remove from list</button>
+              </div>
+            </div>
+            <div class="itemInfo">
+              <div class="item-card__title">HUAWEI G8 4G</div>
+              <div class="itemInfoPrice">$450.00</div>
+            </div>
+            <div class="item-card__footer">
+              <button class="itemButton">
+                <img src="./svg/bin.svg" data-id="3" alt="" class="itemButtonSwg" >
+              </button>
+              <button class="itemButton">
+                <img src="./svg/cart.svg" alt="" class="itemButtonSwg">
+
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="goodsItemButton">
+    <div class="container">
+      <div class="goodsItemButtonContainer">
+        <button class="goodsItemButtonContainerButon" data-start="0" data-end="3">1</button>
+        <button class="goodsItemButtonContainerButon" data-start="4" data-end="7">2</button>
+        <button class="goodsItemButtonContainerButon" data-start="8" data-end="11">3</button>
+        <button class="goodsItemButtonContainerButon" data-start="11" data-end="14">4</button>
+      </div>
+    </div>
+  </section>
+  <section class="goodsAbout">
+    <div class="container">
+      <div class="hidenPanel2"></div>
+      <div class="goodsAboutContainer slider">
+        <div class="hidenPanel"></div>
+        <div class="goodsAboutItem  slider__item">
+          <div class="goodsAboutItemImg">
+            <img src="./svg/point-right.svg" alt="" width="28px">
+          </div>
+          <div class="goodsAboutItemDescr">
+            <h3>FULL WARRENTY</h3>
+            <p>Read about our warenty</p>
+          </div>
+        </div>
+        <div class="goodsAboutItem  slider__item">
+          <div class="goodsAboutItemImg">
+            <img src="./svg/truck.svg" alt="" width="28px">
+          </div>
+          <div class="goodsAboutItemDescr">
+            <h3>EXPRESS SHIPPING</h3>
+            <p>Local & International Shipping</p>
+          </div>
+        </div>
+        <div class="goodsAboutItem  slider__item">
+          <div class="goodsAboutItemImg">
+            <img src="./svg/bubble.svg" alt="" width="28px">
+          </div>
+          <div class="goodsAboutItemDescr">
+            <h3>MOBILE BLOG</h3>
+            <p>Discuss Your Favourite Phone</p>
+          </div>
+        </div>
+        <div class="goodsAboutItem  slider__item">
+          <div class="goodsAboutItemImg">
+            <img src="./svg/headphones.svg" alt="" width="28px">
+          </div>
+          <div class="goodsAboutItemDescr">
+            <h3>24/7 SUPPORT</h3>
+            <p>Get Full Support via Chat</p>
+          </div>
+        </div>
+        
+
+      </div>
+
+      
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="container">
+      <div class="contactsContainer">
+        <div class="col-3">
+          <p>subscribe to latest smartphones
+            news & great deals we offer</p>
+        </div>
+        <div class="col-5">
+          <form method="post">
+            <input class="aboutInput" placeholder="Enter Your Email Address ..." type="email">
+          </form>
+        </div>
+        <div class="col-4">
+          <button class="aboutButton">
+            <img src="./svg/twitter.svg" alt="" class="itemButtonSwg">
+          </button>
+          <button class="aboutButton">
+            <img src="./svg/facebook.svg" alt="" class="itemButtonSwg">
+          </button>
+          <button class="aboutButton">
+            <img src="./svg/linkedin2.svg" alt="" class="itemButtonSwg">
+          </button>
+          <button class="aboutButton">
+            <img src="./svg/google-plus.svg" alt="" class="itemButtonSwg">
+          </button>
+          <button class="aboutButton">
+            <img src="./svg/paypal.svg" alt="" class="itemButtonSwg">
+          </button>
+          <button class="aboutButton">
+            <img src="./svg/youtube.svg" alt="" class="itemButtonSwg">
+          </button>
+          <button class="aboutButton">
+            <img src="./svg/rss.svg" alt="" class="itemButtonSwg">
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <footer>
+    <div class="container">
+      <div class="col-5">
+        <p>Copyright © 2015 <b>codeitStore</b> All Rights Reserved.</p>
+      </div>
+      <div class="footer__copyright__cards col-4">
+        <ul class="cards__list">
+          <li class="cards__list__item">
+            <img src="images/card1.png" alt="card">
+          </li>
+          <li class="cards__list__item">
+            <img src="images/card2.png" alt="card">
+          </li>
+          <li class="cards__list__item">
+            <img src="images/card3.png" alt="card">
+          </li>
+          <li class="cards__list__item">
+            <img src="images/card4.png" alt="card">
+          </li>
+          <li class="cards__list__item">
+            <img src="images/card5.png" alt="card">
+          </li>
+          <li class="cards__list__item">
+            <img src="images/card6.png" alt="card">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- <div class="slider goodsAboutContainer">
+    <div class="slider__item">
+<div class="goodsAboutItem col-3">
+          <div class="goodsAboutItemImg">
+            <img src="./svg/truck.svg" alt="" width="28px">
+          </div>
+          <div class="goodsAboutItemDescr">
+            <h3>EXPRESS SHIPPING</h3>
+            <p>Local & International Shipping</p>
+          </div>
+        </div>
+    </div>
+    <div class="slider__item">
+<div class="goodsAboutItem col-3">
+          <div class="goodsAboutItemImg">
+            <img src="./svg/truck.svg" alt="" width="28px">
+          </div>
+          <div class="goodsAboutItemDescr">
+            <h3>EXPRESS SHIPPING</h3>
+            <p>Local & International Shipping</p>
+          </div>
+        </div>
+    </div>
+    <div class="slider__item">
+<div class="goodsAboutItem col-3">
+          <div class="goodsAboutItemImg">
+            <img src="./svg/truck.svg" alt="" width="28px">
+          </div>
+          <div class="goodsAboutItemDescr">
+            <h3>EXPRESS SHIPPING</h3>
+            <p>Local & International Shipping</p>
+          </div>
+        </div>
+    </div>
+    <div class="slider__item">
+<div class="goodsAboutItem col-3">
+          <div class="goodsAboutItemImg">
+            <img src="./svg/truck.svg" alt="" width="28px">
+          </div>
+          <div class="goodsAboutItemDescr">
+            <h3>EXPRESS SHIPPING</h3>
+            <p>Local & International Shipping</p>
+          </div>
+        </div>
+    </div>
+    <div class="slider__item">
+<div class="goodsAboutItem col-3">
+          <div class="goodsAboutItemImg">
+            <img src="./svg/truck.svg" alt="" width="28px">
+          </div>
+          <div class="goodsAboutItemDescr">
+            <h3>EXPRESS SHIPPING</h3>
+            <p>Local & International Shipping</p>
+          </div>
+        </div>
+    </div>
+    
+  </div> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="slick.min.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
