@@ -1,30 +1,3 @@
-const ref = {
-  listItem: document.querySelector(".goodsList"),
-  buttonPag: document.querySelector(".goodsItemButtonContainer"),
-  filterInput: document.querySelector(".filterGoodsInput"),
-  clear: document.querySelector(".filterGoodsButton"),
-  delete: document.querySelector(".hiddenButtonItem"),
-  deleteTwo: document.querySelector(".itemButton"),
-  burgerBTN: document.querySelector(".burgerMenuSVG"),
-  burgerCNT: document.querySelector(".burgerMenu"),
-  menu: document.querySelector(".menu"),
-};
-
-ref.buttonPag.addEventListener("click", handleClick);
-
-ref.filterInput.addEventListener("input", handleFilter);
-
-ref.clear.addEventListener("click", handleClear);
-ref.listItem.addEventListener("click", handleDelete);
-ref.burgerBTN.addEventListener("click", handleSwitchTheme);
-
-function handleSwitchTheme() {
-  console.log("burger");
-  ref.burgerCNT.classList.toggle("on");
-  ref.burgerCNT.classList.toggle("burgerMenuZ");
-  ref.menu.classList.toggle("onn");
-}
-
 const items = [
   {
     id: "0",
@@ -139,6 +112,30 @@ const items = [
     alt: "img",
   },
 ];
+const ref = {
+  listItem: document.querySelector(".goodsList"),
+  buttonPag: document.querySelector(".goodsItemButtonContainer"),
+  filterInput: document.querySelector(".filterGoodsInput"),
+  clear: document.querySelector(".filterGoodsButton"),
+  delete: document.querySelector(".hiddenButtonItem"),
+  deleteTwo: document.querySelector(".itemButton"),
+  burgerBTN: document.querySelector(".burgerMenuSVG"),
+  burgerCNT: document.querySelector(".burgerMenu"),
+  menu: document.querySelector(".menu"),
+};
+
+ref.buttonPag.addEventListener("click", handleClick);
+ref.filterInput.addEventListener("input", handleFilter);
+ref.clear.addEventListener("click", handleClear);
+ref.listItem.addEventListener("click", handleDelete);
+ref.burgerBTN.addEventListener("click", handleSwitchTheme);
+
+function handleSwitchTheme() {
+  console.log("burger");
+  ref.burgerCNT.classList.toggle("on");
+  ref.burgerCNT.classList.toggle("burgerMenuZ");
+  ref.menu.classList.toggle("onn");
+}
 
 function handleClear(e) {
   e.preventDefault();
@@ -203,7 +200,6 @@ function handleClick(e) {
 }
 
 function buildToDoItem(item) {
-  //Функция с шаблоном разметки
   return ` <li class="goodsListItem" data-id="${items.id}">
             <div class="col-3 item-card">
                 <div class="itemContainerImg">
